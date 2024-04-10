@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+    document.write("<h1>Classificação genero e idade </h1>")
+
+    //  VARIAVEIS estabelecidas através do prompt
+
+   
+
+    $idade = prompt("Qual sua idade?")
+
+    $nome = prompt("Qual seu nome?")
+
+    $sexo = prompt("Qual seu sexo? [m] ou [f]")
+
+    if (($sexo == "m") || ($sexo == "M") || ($sexo == "f") || ($sexo == "F")) {
+        if (($sexo == "m") || ($sexo == "M")) {
+            if ($idade < 18) {
+                alert("MENINO")
+
+                //Esta parte do código gera a tabela com a imagem de um menino
+                document.write("<center>")// o "center" serve para centralizar a tabela 
+                document.write("<table border='4' width = '750' height = '500'>") // o table cria a tabela 
+                document.write("<tr bgcolor = 'green'>") // o "td" cria as colunas da tabela 
+                document.write("<td><B>NOME</B></td>")
+                document.write("<td><B>GENERO</B></td>")
+                document.write("<td><B>IDADE</B></td>")
+                document.write("<td><B>IMAGEM</B></td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td>" + $nome)
+                document.write("<td>Masculino</td>")
+                document.write("<td>" + $idade)
+                document.write("</td>")
+                document.write("<td><img src='img/masculino/menino/Captura de tela 2024-04-10 101334.png' width='100%' height = '100%' alt='erro'>")
+                document.write("</td>")
+                document.write("</tr>")
+                document.write("</table>")
+
+
+            }
+
+            else {
+
+
+                alert("HOMEM")
+
+                //Esta parte do código gera a tabela com a imagem de um homem
+
+                document.write("<center>") // o "center" serve para centralizar a tabela 
+                document.write("<table border='4' width = '750' height = '500'>")// o table cria a tabela 
+                document.write("<tr bgcolor = 'green' width = '150' height = '50'>") // o "tr" cria a linha da tabela
+                document.write("<td><B>NOME</B></td>")// o "td" cria as colunas da tabela 
+                document.write("<td><B>GENERO</B></td>")
+                document.write("<td><B>IDADE</B></td>")
+                document.write("<td><B>IMAGEM</B></td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td>" + $nome)
+                document.write("<td>Masculino</td>")
+                document.write("<td>" + $idade)
+                document.write("</td>")
+                document.write("<td><img src='img/masculino/homem/Captura de tela 2024-04-10 101540.png' width='100%' height = '100%' alt='erro'>")
+                document.write("</td>")
+                document.write("</tr>")
+                document.write("</table>")
+
+            }
+        }
+
+        if (($sexo == "f") || ($sexo == "F")) {
+            if ($idade < 18) {
+                alert("MENINA")
+
+                //Esta parte do código gera a tabela com a imagem de uma menina
+
+                document.write("<center>") // o "center" serve para centralizar a tabela 
+                document.write("<table border='4' width = '750' height = '500'>") // o table cria a tabela 
+                document.write("<tr bgcolor = 'green' width = '150' height = '50'>") // o "tr" cria a linha da tabela
+                document.write("<td><B>NOME</B></td>") // o "td" cria as colunas da tabela 
+                document.write("<td><B>GENERO</B></td>")
+                document.write("<td><B>IDADE</B></td>")
+                document.write("<td><B>IMAGEM</B></td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td>" + $nome)
+                document.write("<td>Femino</td>")
+                document.write("<td>" + $idade)
+                document.write("</td>")
+                document.write("<td><img src='img/femino/menina/Captura de tela 2024-04-10 101723.png' width='100%' height = '100%' alt='erro'>")
+                document.write("</td>")
+                document.write("</tr>")
+                document.write("</table>")
+            }
+
+            else {
+                alert("MULHER")
+                //Esta parte do código gera a tabela com a imagem de uma mulher 
+                document.write("<center>") // o "center" serve para centralizar a tabela 
+                document.write("<table border='4' width = '750' height = '500'>") // o table cria a tabela 
+                document.write("<tr bgcolor = 'green' width = '150' height = '50'>")// o "tr" cria a linha da tabela
+                document.write("<td><B>NOME</B></td>") // o "td" cria as colunas da tabela 
+                document.write("<td><B>GENERO</B></td>")
+                document.write("<td><B>IDADE</B></td>")
+                document.write("<td><B>IMAGEM</B></td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td>" + $nome)
+                document.write("<td>Femino</td>")
+                document.write("<td>" + $idade)
+                document.write("</td>")
+                document.write("<td><img src='img/femino/mulher/Captura de tela 2024-04-10 101808.png' width='100%' height = '100%' alt='erro'>")
+                document.write("</td>")
+                document.write("</tr>")
+                document.write("</table>")
+            }
+        }
+    }
+    else {
+        alert("ERRO! é necessario digitar [f] ou [m]")
+
+    }
+
+
+
+</script>
+
+<body>
+
+
+
+
+</body>
+
+</html>

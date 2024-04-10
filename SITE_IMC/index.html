@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // VARIAVEIS
+        $peso = prompt("Qual seu peso ? em KG")
+        $altura = prompt("Qual sua altura ? em CM")
+        $imc = $peso / ($altura / 100 * $altura / 100)
+
+        //ABAIXO DO PESO
+        if ($imc < 18.5) {
+            document.write("<center>")
+            document.write("<table border='4' width = '750' height = '500'>")
+            document.write("<tr bgcolor = 'green'>")
+            document.write("<td><B>PESO</B></td>")
+            document.write("<td><B>ALTURA</B></td>")
+            document.write("<td><B>IMC</B></td>")
+            document.write("<td><B>CLASSIFCAÇÃO</B></td>")
+            document.write("</tr>")
+            document.write("<tr>")
+            document.write("<td>" + $peso)
+            document.write("</td>")
+            document.write("<td>" + $altura)
+            document.write("</td>")
+            document.write("<td>" + $imc)
+            document.write("</td>")
+            document.write("<td><img src='img/seu madruga(magro).png' width='100%' height = '100%' alt='erro'>")
+            document.write("</td>")
+            document.write("</tr>")
+            document.write("</table>")
+            document.write("<br><a href='../'>reininciar</a>")
+        }
+        else {
+
+             // PESO ADEQUADO
+            if ($imc < 25) {
+                document.write("<center>")
+                document.write("<table border='4' width = '750' height = '500'>")
+                document.write("<tr bgcolor = 'green'>")
+                document.write("<td><B>PESO</B></td>")
+                document.write("<td><B>ALTURA</B></td>")
+                document.write("<td><B>IMC</B></td>")
+                document.write("<td><B>CLASSIFCAÇÃO</B></td>")
+                document.write("</tr>")
+                document.write("<tr>")
+                document.write("<td>" + $peso)
+                document.write("</td>")
+                document.write("<td>" + $altura)
+                document.write("</td>")
+                document.write("<td>" + $imc)
+                document.write("</td>")
+                document.write("<td><img src='img/Captura de tela 2024-04-10 134425.png' width='100%' height = '100%' alt='erro'>")
+                document.write("</td>")
+                document.write("</tr>")
+                document.write("</table>")
+                document.write("<br><a href='../'>reininciar</a>")
+
+            }
+            else {
+                 //ACIMA DO PESO
+                if ($imc < 30) {
+                    document.write("<center>")
+                    document.write("<table border='4' width = '750' height = '500'>")
+                    document.write("<tr bgcolor = 'green'>")
+                    document.write("<td><B>PESO</B></td>")
+                    document.write("<td><B>ALTURA</B></td>")
+                    document.write("<td><B>IMC</B></td>")
+                    document.write("<td><B>CLASSIFCAÇÃO</B></td>")
+                    document.write("</tr>")
+                    document.write("<tr>")
+                    document.write("<td>" + $peso)
+                    document.write("</td>")
+                    document.write("<td>" + $altura)
+                    document.write("</td>")
+                    document.write("<td>" + $imc)
+                    document.write("</td>")
+                    document.write("<td><img src='img/jaiminho(a cima do peso).png' width='100%' height = '100%' alt='erro'>")
+                    document.write("</td>")
+                    document.write("</tr>")
+                    document.write("</table>")
+                    document.write("<br><a href='../'>reininciar</a>")
+                }
+                else {
+                     //OBESO
+                    if ($imc >= 30) {
+                        document.write("<center>")
+                        document.write("<table border='4' width = '750' height = '500'>")
+                        document.write("<tr bgcolor = 'green'>")
+                        document.write("<td><B>PESO</B></td>")
+                        document.write("<td><B>ALTURA</B></td>")
+                        document.write("<td><B>IMC</B></td>")
+                        document.write("<td><B>CLASSIFCAÇÃO</B></td>")
+                        document.write("</tr>")
+                        document.write("<tr>")
+                        document.write("<td>" + $peso)
+                        document.write("</td>")
+                        document.write("<td>" + $altura)
+                        document.write("</td>")
+                        document.write("<td>" + $imc)
+                        document.write("</td>")
+                        document.write("<td><img src='img/seu barriga (obeso).png' width= 100%' height = '100%' alt='erro'>")
+                        document.write("</td>")
+                        document.write("</tr>")
+                        document.write("</table>")
+                        document.write("<br><a href='../'>reininciar</a>")
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

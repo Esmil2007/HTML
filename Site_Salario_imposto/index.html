@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script>
+
+        $salario= prompt("Digite o seu salário?")
+
+        //Classificação do imposto
+
+        if($salario < 1100.01){
+            $porcentagem = "7.5%"
+            $desconto = 0.075
+        } else if($salario < 2203.49){
+            $porcentagem = "9%"
+            $desconto = 0.09
+        }else if($salario < 3305.23){
+            $porcentagem = "12%"
+            $desconto = 0.12
+        }else{
+            $porcentagem = "14%"
+            $desconto = 0.14
+        }
+
+
+
+        //Calculo
+
+        $valordebitado = $salario * $desconto
+        $salario_novo = $salario - $valordebitado
+
+        //Tabela
+
+        document.write("<center>")
+        document.write("<font size ='5'>")
+        document.write("TABELA SALARIAL")
+        document.write("</font>")
+        document.write("<table border='6' bgcolor='#00ffff'>")
+        document.write("<tr bgcolor='#00bfff'>")
+        document.write("<td><font size='3'><center><b> SALARIO</b></center></font></td>")
+        document.write("<td><font size='3'><center><b>PORCENTAGEM DESCONTADA</b></center></font></td>")
+        document.write("<td><font size='3'><center><b>DESCONTO DO SALÁRIO</b></center></font></td>")
+        document.write("<td><font size='3'><center><b>SALÁRIO COM DESCONTO </b></center></font></td>")
+        document.write("</tr>")
+        document.write("<tr bgcolor='#0080ss'>")
+        document.write("<td><center>" + $salario + "</center></td>")
+        document.write("<td><center>" + $porcentagem + "</center></td>")
+        document.write("<td><center>" + $valordebitado + "</center></td>")
+        document.write("<td><center>" + $salario_novo + "</center></td>")
+        document.write("</tr>")
+        document.write("</table>")
+        document.write("</center>")
+        
+
+    </script>
+</head>
+<body bgcolor="#00ffbf">
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //sistema para calcular médias
+
+        $num1 = prompt("Digite o 1° número: ")
+
+        $num2 = prompt("Digite o 2° número: ")
+        
+        $num3 = prompt("Digite o 3° número: ")
+
+        $media = (parseInt($num1) + parseInt($num2) + parseInt($num3)) / 3
+
+        //tabela
+        
+        document.write("<center>")
+        document.write("<font size ='5'>")
+        document.write("TABELA DE MÉDIAS")
+        document.write("</font>")
+        document.write("<table border='3' bgcolor='#00aaff'>")
+        document.write("<tr bgcolor='#33bbff'>")
+        document.write("<td><font size='3'><b>NÚMERO 1</b></font></td>")
+        document.write("<td><font size='3'><b>NÚMERO 2</b></font></td>")
+        document.write("<td><font size='3'><b>NÚMERO 3</b></font></td>")
+        document.write("<td><font size='3'><b>MÉDIA</b></font></td>")
+        document.write("</tr>")
+        document.write("<tr bgcolor='#99ddff'>")
+        document.write("<td>"+$num1+"</td>")
+        document.write("<td>"+$num2+"</td>")
+        document.write("<td>"+$num3+"</td>")
+        document.write("<td>"+$media.toFixed(2)+"</td>")
+        document.write("</tr>")
+        document.write("</table>")
+        document.write("</center>")
+
+    </script>
+</head>
+
+<body bgcolor="#b3e6ff">
+
+
+</body>
+
+</html>

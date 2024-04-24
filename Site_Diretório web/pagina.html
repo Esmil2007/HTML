@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <script>
+        function registrar() {
+            var formulario = document.getElementById("formulario");
+            var nome = formulario.nome.value;
+            var idade = formulario.idade.value;
+            var sexo = formulario.sexo.value;
+            var professor1 = formulario.professor1.value;
+            var professor2 = formulario.professor2.value;
+            var curso = formulario.curso.value;
+            var turno = formulario.turno.value;
+            var disciplinas = "";
+            var checkboxes = document.getElementsByName("disciplina");
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    disciplinas += checkboxes[i].value + ", ";
+                }
+            }
+            disciplinas = disciplinas.slice(0, -2); // Remover a vírgula e o espaço extra no final
+
+
+            document.write("Nome: " + nome + "<br>");
+            document.write("Idade: " + idade + "<br>");
+            document.write("Sexo: " + sexo + "<br>");
+            document.write("Professor 1: " + professor1 + "<br>");
+            document.write("Professor 2: " + professor2 + "<br>");
+            document.write("Curso: " + curso + "<br>");
+            document.write("Turno: " + turno + "<br>");
+            document.write("Disciplinas favoritas: " + disciplinas);
+
+
+
+
+
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <h2>Formulário de Cadastro</h2>
+
+    <form id="formulario" method="post">
+
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" required><br>
+
+       
+
+
+        <label for="sexo">Sexo:</label><br>
+        <input type="radio" id="sexo" name="sexo" value="Masculino">
+        <label for="sexo">Masculino</label><br>
+        <input type="radio" id="sexo" name="sexo" value="Feminino">
+        <label for="sexo">Femino</label><br>
+        
+        </label><br>
+
+
+
+        <label for="professor1">Professor 1:</label><br>
+        <select id="professor1" name="professor1" required>
+            <option value="Ricardo">Ricardo</option>
+            <option value="Calu">Calu</option>
+        </select><br>
+
+
+        
+
+        <label for="professor2">Professor 2:</label><br>
+        <select id="professor2" name="professor2" required>
+            <option value="Ricardo">Ricardo</option>
+            <option value="Calu">Calu</option>
+        </select><br>
+
+
+        <label for="curso">Curso:</label><br>
+        <select id="curso" name="curso" required>
+            <option value="Mecanica">Mecanica</option>
+            <option value="Solda">Solda</option>
+            <option value="Desenvolvimento de Sistemas">Desenvolvimento de Sistemas</option>
+        </select><br>
+
+        <label for="turno">Turno:</label><br>
+        <select id="turno" name="Turno" required>
+            <option value="Manhã">MANHÃ</option>
+            <option value="Tarde">TARDE</option>
+            <option value="Noite">NOITE</option>
+        </select><br>
+
+        <label>Disciplinas favoritas:</label><br>
+        <input type="checkbox" id="html" name="disciplina" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="javascript" name="disciplina" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="checkbox" id="arduino" name="disciplina" value="Arduino">
+        <label for="arduino">Arduino</label><br>
+        <input type="checkbox" id="logica" name="disciplina" value="Lógica">
+        <label for="logica">Lógica</label><br>
+        <input type="checkbox" id="gestart" name="disciplina" value="Gestart">
+        <label for="gestart">Gestart</label><br>
+
+        <input type="button" onclick="registrar()" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+   
+</body>
+
+</html>

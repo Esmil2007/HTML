@@ -1,0 +1,4 @@
+O div é utilizado como uma maneira de dividir o código HTML em diferentes partes funcionais.
+O div header é empregado para definir a seção que corresponde ao cabeçalho da página.
+Já o div main-content tem a finalidade de agrupar o conteúdo principal da página, destacando-o como o elemento central. 
+Por fim, o div footer é destinado a envolver o rodapé da página, onde comumente são apresentados os links, informações de autoria, contratos e outros elementos pertinentes."
